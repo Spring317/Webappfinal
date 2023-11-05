@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="validate.js"></script>
+    <h1>Model evaluation</h1>
+    <div class="container">
+        <form action="metrics.php" method="post">
+
+            <label for="tp">True Positive</label>
+            <input type="text" id="tp" name="tp" placeholder="">
+           
+            <label for="tn">True Negative</label>
+            <input type="text" id="tn" name="tn" placeholder="">
+
+
+            <label for="fp">False Positive</label>
+            <input type="text" id="fp" name="fp" placeholder="">
+
+            <label for="fn">False Negative</label>
+            <input type="text" id="fn" name="fn" placeholder="">
+
+            
+            
+            <div class="button">
+                <input type="submit" id="submit" name="submit" value="Submit" onclick="validInfo()" >  
+                <input type="submit" id="button" name="display" value="Display">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
